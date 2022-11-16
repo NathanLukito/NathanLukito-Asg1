@@ -1,9 +1,4 @@
-const btn = document.getElementById('nav_button');
-
-btn.addEventListener('click', function onClick(event) {
-  const container = document.getElementById('navigation');
-
-  container.style.backgroundColor = 'black';
-  btn.style.width = 919;
-});
-
+function nav_button() {
+  document.getElementById('navigation').classList.toggle('active');
+  document.getElementById('fade').classList.toggle('fade');
+}
