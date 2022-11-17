@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<link href="styles.css" rel="stylesheet" type="text/css" />
+<meta charset = "utf-8">
+<meta name ="viewport" content = "width=device-width">
+<link href ="styles.css" rel = "stylesheet" type = "text/css"/>
+<link href = "navigation.css" rel = "stylesheet" type = "text/css"/>
 <script src = "script.js" defer></script>
 
 
@@ -17,15 +18,16 @@
 <body>
         <nav class = "navigation" id = "navigation">
             <div class = "nav_button" onclick = "nav_button()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <svg class = "nav_btn_icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill = "white" class="bi bi-chevron-right" 
+                    viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 
+                    .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" ></path> 
+                </svg>
             </div>
             <ul class = "nav_main">
                 <li class = "nav_item">
                     <a href = "https://stackoverflow.com/questions/48516538/flex-align-items-center-not-centering-items" class = "nav_link">
 
-                        <svg width="40" height="40" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> 
+                        <svg class = "icon" width="40" height="40" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> 
                             <path d="M7 10C7 9.44771 
                             6.55228 9 6 9C5.44772 9 5 9.44771 5 10C5 10.5523 5.44772 11 6 11C6.55228 11 7 10.5523 7 10Z"/> 
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5C1 0.671573 1.67157 0 2.5 0H10.7071L14 3.29289V13.5C14 
@@ -43,7 +45,7 @@
                 <li class = "nav_item">
                     <a href - "#" class = "nav_link">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-people-fill" 
+                        <svg class = "icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-people-fill" 
                         viewBox="0 0 16 16"> <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/> 
                         <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5
                         9c-4 0-5 3-5 4s1 1 1 1h4.216z"/> <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" /> 
@@ -57,7 +59,7 @@
                 <li class = "nav_item">
                     <a href - "#" class = "nav_link">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-tags-fill" viewBox="0 0 16 16"> 
+                        <svg class = "icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-tags-fill" viewBox="0 0 16 16"> 
                             <path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 
                             6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/> 
                             <path d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043-7.457-7.457z"/> 
@@ -71,7 +73,7 @@
                 <li class = "nav_item">
                     <a href - "#" class = "nav_link">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="bi bi-telephone-fill" 
+                        <svg class = "icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="bi bi-telephone-fill" 
                             viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 
                             2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 
                             1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 
@@ -91,8 +93,17 @@
         
 
         <section class = "page1">
+            <h1 class = "welcome">
+                WELCOME
+            </h1>
+            <div class = "btn_containter">
+                <div class = "buttons">
+                    <a href = "#" class = "btn acc_button"> Get Started </a>
+                    <a href = "#" class = "btn products_button"> Our Products </a>
+                </div>
+            </div>
 
-            <p>Voluptas officia modi assumenda. Dolorem, error vero. Vero, laboriosam. Eum obcaecati earum, sed fugit deserunt iste quas consectetur ipsum, iusto illo animi deleniti, consequuntur quasi? Debitis dolorem laudantium qui totam?</p>
+            
         </section>
 
         <section class = "page2">

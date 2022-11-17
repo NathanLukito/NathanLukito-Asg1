@@ -1,0 +1,89 @@
+.navigation{
+    width: 75px;
+    height: 100%;
+    position: fixed;
+    background: #3e3e3e;
+    transition: width 200ms ease;
+    font-size: 0%;
+    z-index: 3;
+}
+
+.navigation.active{
+    background-color: whitesmoke;
+    width: 200px;
+    height: 100vh;
+    font-size:x-large;
+    color: black;
+    box-shadow: 1px 1px 10px black;
+}
+
+
+.navigation.active .icon{
+    fill: #2AA99A;
+    transition: 200ms ease;
+    
+}
+
+
+.navigation.active .icon:hover{
+    fill: rgb(39, 39, 39);
+} 
+
+
+.navigation.active .nav_link{
+    animation: fadeIn 0.5s;
+}
+
+.icon{
+    padding-top: 50px;
+}
+
+.navigation.active .nav_btn_icon{
+    fill: #2AA99A;
+    transform: rotateZ(180deg);
+    padding-right: 160px;
+    transition: 200ms ease;
+}
+
+.nav_btn_icon{
+    padding-left: 50px;
+    transition: 200ms ease;
+}
+
+
+
+.nav_main{
+    display: flexbox;
+    padding: 19px 18px;
+    margin: 0;
+    flex-direction: column;
+}
+
+.nav_link:link{
+    text-decoration: none; 
+}
+
+.nav_link{
+    color: #2AA99A;
+    animation: fadeIn 2s;
+}
+
+.nav_link:hover{
+    color: #2A3D48;
+}
+
+.navigation.active .nav_link:hover .icon{
+    fill:rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition: 200ms ease;
+}
+
+.icon{
+    fill: grey;
+}
+
+.icon:hover{
+    fill: #2AA99A;
+    transform: scale(1.1);
+    transition: 200ms ease;
+}
