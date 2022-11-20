@@ -25,6 +25,7 @@ ul{
 
 /* PAGE 1  */
 .page1{
+    position: relative;
     background-color: rgb(255, 255, 255);
     background-image: url("page1.png"); 
     aspect-ratio: 2560/1440;
@@ -34,32 +35,65 @@ ul{
     background-size: cover;
 }
 
-.btn_container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*Text*/
+.name_container{
+    align-self: flex-start;
+    background-color: #13c4be;
+    margin-left: 20px;
+    width: 83vh;
+    height: 22vh;
 }
 
-.buttons {
-    display: flex;
-    flex-direction: column;
+.name{
+    color: white;
+    font-size: 10vh;;
+    margin-left: 20px;
+    width: inherit;
+    height: inherit;
+    align-self: flex-start;
 }
+
+.desc{
+    font-size: 6vh;
+    color: rgb(255, 255, 255);
+    border-left: 4px solid #13c4be;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding-left: 10px;
+    width: auto;
+    height: auto;
+    align-self: flex-start;
+}
+
+.desc::after{
+    content: "\a Transcription A.I.";
+    white-space: pre;
+    color: rgb(141, 255, 177)
+}
+
+.robot_image{
+    position: absolute;
+    margin-left: 78vh;
+    bottom: 37vh;
+}
+
+/*Buttons*/
 
 .btn {
     text-decoration: none;
+    position: relative;
     padding: 20px 50px;
     font-size: 1.7 rem;
-    position: relative;
     margin: 32px;
 }
 
 .acc_button {
-    position: absolute;
-    background: #2AA99A;
+    background: #13c4be;
     color: #2A3D48;
     font-size: large;
     border-radius: 30px;
+    bottom: 24vh;
+    margin-right: 72vh;
     transition: transform 0.3s ease;
     z-index: 2;
 }
@@ -68,7 +102,7 @@ ul{
     content: "";
     position: absolute;
     opacity: 0.3;
-    background: #2AA99A;
+    background: #13c4be;
     border-radius: inherit;
     width: 100%;
     height: 100%;
@@ -91,16 +125,18 @@ ul{
 }
 
 .products_button{
-    color: #2AA99A;
+    position: relative;
+    color: #13c4be;
     font-size: large;
     text-indent: -8px;
-    margin-top: 50%;
+    margin-right: 50vh;
+    bottom: 30vh;
 }
 
 .products_button::after, .products_button::before {
-    border: 3px solid #2AA99A;
+    border: 3px solid #13c4be;
     content: "";
-    position: absolute;
+    position: absolute;;
     width: calc(100% - 20px);
     height: calc(100% - 6px);
     left: 0;
@@ -115,6 +151,7 @@ ul{
 .products_button:hover::before {
     transform: translate(5px, 5px);
 }
+
 
 
 /* PAGE 2 */

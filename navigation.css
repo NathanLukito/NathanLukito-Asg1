@@ -19,7 +19,7 @@
 
 
 .navigation.active .icon{
-    fill: #2AA99A;
+    fill: #13c4be;
     transition: 200ms ease;
     
 }
@@ -39,7 +39,7 @@
 }
 
 .navigation.active .nav_btn_icon{
-    fill: #2AA99A;
+    fill: #13c4be;
     transform: rotateZ(180deg);
     padding-right: 160px;
     transition: 200ms ease;
@@ -64,8 +64,8 @@
 }
 
 .nav_link{
-    color: #2AA99A;
-    animation: fadeIn 2s;
+    color: #13c4be;
+
 }
 
 .nav_link:hover{
@@ -74,7 +74,7 @@
 
 .navigation.active .nav_link:hover .icon{
     fill:rgb(0, 0, 0);
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: 200ms ease;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .icon:hover{
-    fill: #2AA99A;
-    transform: scale(1.1);
+    fill: #13c4be;
+    transform: scale(1.03);
     transition: 200ms ease;
 }
