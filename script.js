@@ -3,19 +3,35 @@ function nav_button() {
   document.getElementById('fade').classList.toggle('fade');
 }
 
+const cards = document.querySelectorAll('.card');
 
+const observer1 = new IntersectionObserver(entries => {
+  entries.forEach(entry =>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show')
+    }
+  })
+}, {
+  threshold: 1
+})
 
-// let link = document.querySelectorAll(".nav_link");
-// link.forEach((item) => {
-//   item.addEventListener("click", function () {
-//     let element = document.getElementById(item.getAttribute("data-link"));
-//     console.log(item);
-//     console.log(element);
-//     console.log(link)
-//     element.scrollIntoView(true);
-//   })})
+const observer2 = new IntersectionObserver(entries => {
+  entries.forEach(entry =>{
+    if(! entry.isIntersecting){
+      entry.target.classList.remove('show')
+    }
+  })
+}, {
+  threshold: 0.1
+})
 
+observer1.observe(cards[0])
+observer1.observe(cards[1])
+observer1.observe(cards[2])
   
+observer2.observe(cards[0])
+observer2.observe(cards[1])
+observer2.observe(cards[2])
 
 
 

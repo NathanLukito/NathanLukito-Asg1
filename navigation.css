@@ -21,7 +21,6 @@
 .navigation.active .icon{
     fill: #13c4be;
     transition: 200ms ease;
-    
 }
 
 
@@ -49,8 +48,6 @@
     padding-left: 50px;
     transition: 200ms ease;
 }
-
-
 
 .nav_main{
     display: flexbox;
