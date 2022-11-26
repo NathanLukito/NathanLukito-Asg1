@@ -1,6 +1,6 @@
 .navigation{
-    width: 75px;
-    height: 100%;
+    width: 6.6vw;
+    height: 100vh;
     position: fixed;
     background: #3e3e3e;
     transition: width 200ms ease;
@@ -10,7 +10,7 @@
 
 .navigation.active{
     background-color: whitesmoke;
-    width: 200px;
+    width: 18vw;
     height: 100vh;
     font-size:x-large;
     color: black;
@@ -34,18 +34,22 @@
 }
 
 .icon{
-    padding-top: 50px;
+    padding-top: 8vh;
+}
+
+.icon.home{
+    padding-top: 0vh;
 }
 
 .navigation.active .nav_btn_icon{
     fill: #13c4be;
     transform: rotateZ(180deg);
-    padding-right: 160px;
+    padding-right: 15vw;
     transition: 200ms ease;
 }
 
 .nav_btn_icon{
-    padding-left: 50px;
+    padding-left: 4vw;
     transition: 200ms ease;
 }
 

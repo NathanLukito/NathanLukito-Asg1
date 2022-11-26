@@ -60,14 +60,19 @@ ul{
     align-self: flex-start;
 }
 
+.page1_desc{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 45vw;
+    margin-left: 4vw;
+}
+
 .desc{
     font-size: 3vw;
     color: rgb(255, 255, 255);
     border-left: 4px solid #13c4be;
-    margin-left: 40px;
-    margin-top: 50px;
-    padding-left: 10px;
-    width: auto;
+    width: 22vw;
     height: auto;
     align-self: flex-start;
 }
@@ -79,11 +84,10 @@ ul{
 }
 
 .robot_image{
-    position: absolute;
     margin-left: 90vh;
-    bottom: 37vh;
     height: auto;
     max-width: 100%;
+    margin-top: -85vh;
 }
 
 /*Buttons*/
@@ -91,18 +95,21 @@ ul{
 .btn {
     text-decoration: none;
     position: relative;
-    padding: 20px 50px;
-    font-size: 1.7 vw;
-    margin: 32px;
+    font-size: 2vw;
+    margin-bottom: 25px;
+    margin-left: 28vw;
+    transform: translateY(-30vh);
 }
 
 .acc_button {
-    background: #13c4be;
+    background-color: #13c4be;
     color: #2A3D48;
-    font-size: large;
+    width: 15vw;
+    height: 9vh;
     border-radius: 30px;
-    bottom: 24vh;
-    margin-right: 72vh;
+    margin-top: 13vh;
+    text-align: center;
+    padding-top: 3.4vh;
     transition: transform 0.3s ease;
     z-index: 2;
 }
@@ -111,7 +118,7 @@ ul{
     content: "";
     position: absolute;
     opacity: 0.3;
-    background: #13c4be;
+    background-color: #13c4be;
     border-radius: inherit;
     width: 100%;
     height: 100%;
@@ -136,16 +143,16 @@ ul{
 .products_button{
     position: relative;
     color: #13c4be;
-    font-size: large;
-    text-indent: -8px;
-    margin-right: 50vh;
-    bottom: 30vh;
+    width: 16vw;
+    height: 10vh;
+    text-indent: 1.8vw;
+    padding-top: 3.4vh;
 }
 
 .products_button::after, .products_button::before {
     border: 3px solid #13c4be;
     content: "";
-    position: absolute;;
+    position: absolute;
     width: calc(100% - 20px);
     height: calc(100% - 6px);
     left: 0;
@@ -171,7 +178,6 @@ ul{
 }
 
 .team_image{
-    position: absolute;
     display: block;
     padding-left: 2vw;
     height: auto;
@@ -179,10 +185,9 @@ ul{
 }
 
 .about_container{
-    position: absolute;
     height: auto;
     max-width: 45vw;
-    margin-left: 49.5vw;
+    margin-left: 2vw;
     border-left: 1vw solid #13c4be;
 }
 .about{
@@ -278,6 +283,58 @@ ul{
     transform: rotate(135deg);
   }
   
+/*page 4*/
+.page4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2A3D48;
+    color: #ef9e1d;
+}
+
+.promotion_container{
+    background-color: #ffffff;
+    height: 90vh;
+    width: 30vw;
+    box-shadow: 0px 0px 20px #13c4be; 
+}
+
+.promotion_header{
+    font-size: 6vw;
+    text-align: center;
+    transform: translateY(-10vh);
+}
+
+.promotion_desc{
+    font-size: 3vw;
+    color: rgb(227, 94, 94);
+    transform: translateY(-15vh);
+    padding-left: 3vw;
+}
+.promotion_desc:after{
+    content: "29/12/2022";
+    font-size: 4.5vw;
+    color: rgb(227, 94, 94);
+    border: 1vw solid;
+    border-radius: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-left: -1.3vw;
+}
+
+.promotion_text{
+    padding-bottom: 5vh;
+}
+
+
+
+.promotion_image{
+    margin-right: 7vw;
+}
+
+
 
 /*
 .product_name{
