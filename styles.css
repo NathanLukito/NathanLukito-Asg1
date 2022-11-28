@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1080px){ 
+    .right-content, .left-content{
+        width: 100%;
+        padding-left: 9%;
+        justify-self: center;
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -9,18 +17,20 @@ body{
     background-color: #ffffff;
     overflow-x: hidden;
     z-index: 3;
+    background-color: #2A3D48;
 }
 
 
-section{
+.page{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     height: 100vh;
     width: 100vw;
     padding-left: 6vw;
     scroll-snap-align: start;
-    /* padding: 100px 20vw; */
+}
+section{
+    align-items: center;
+    scroll-snap-align: start;
 }
 
 
@@ -30,51 +40,46 @@ ul{
 
 /* PAGE 1  */
 .page1{
-    position: relative;
-    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2A3D48;
     background-image: url("page1.png"); 
-    aspect-ratio: 2560/1440;
-    width: 100vw;
-    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 100vh;
 }
 
 /*Text*/
-.name_container{
+.left-content{
+    width: 50%;
     align-self: flex-start;
+}
+.name_container{
     background-color: #13c4be;
-    margin-left: 3vw;
-    width: 35vw;
-    height: 10vw;
+    height: 100px;
+    width: 430px;
+    margin-left: 20%;
+    margin-top: -42px;
 }
 
 .name{
     color: white;
-    font-size: 4vw;
-    margin-left: 20px;
-    width: 40vw;
-    height: 22vh;
-    text-indent: 0.5vw;
-    align-self: flex-start;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .page1_desc{
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    width: 45vw;
-    margin-left: 4vw;
+    margin-left: 25%;
+    width: 500px;
 }
 
 .desc{
-    font-size: 3vw;
+    font-size: 40px;
     color: rgb(255, 255, 255);
     border-left: 4px solid #13c4be;
-    width: 22vw;
     height: auto;
-    align-self: flex-start;
 }
 
 .desc::after{
@@ -83,33 +88,40 @@ ul{
     color: rgb(141, 255, 177)
 }
 
+.right-content{
+    width: 50%;
+    align-self: flex-end;
+}
 .robot_image{
-    margin-left: 90vh;
-    height: auto;
-    max-width: 100%;
-    margin-top: -85vh;
+    margin-left: 20%;
+    margin-bottom: 20%;
 }
 
+
 /*Buttons*/
+.button_container{
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-35px);
+}
 
 .btn {
     text-decoration: none;
+    flex-wrap: wrap;
     position: relative;
-    font-size: 2vw;
+    font-size: 22px;
     margin-bottom: 25px;
-    margin-left: 28vw;
-    transform: translateY(-30vh);
+    margin-left: 28px;
 }
 
 .acc_button {
     background-color: #13c4be;
     color: #2A3D48;
-    width: 15vw;
-    height: 9vh;
+    width: 170px;
+    height: 40px;
     border-radius: 30px;
-    margin-top: 13vh;
     text-align: center;
-    padding-top: 3.4vh;
+    padding-top: 13px;
     transition: transform 0.3s ease;
     z-index: 2;
 }
@@ -143,10 +155,10 @@ ul{
 .products_button{
     position: relative;
     color: #13c4be;
-    width: 16vw;
-    height: 10vh;
-    text-indent: 1.8vw;
-    padding-top: 3.4vh;
+    width: 170px;
+    height: 40px;
+    text-indent: 16px;
+    padding-top: 13px;
 }
 
 .products_button::after, .products_button::before {
@@ -172,74 +184,73 @@ ul{
 
 /* PAGE 2 */
 .page2{
-    background-color: #2A3D48;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    height: 100%;
+}
+
+.team_image_container{
+    margin-top: 78px;
+    margin-left: 30px;
 }
 
 .team_image{
-    display: block;
-    padding-left: 2vw;
-    height: auto;
-    max-width: 45vw;
+    max-height: 400px;
+    max-width: 500px;
 }
 
 .about_container{
-    height: auto;
-    max-width: 45vw;
-    margin-left: 2vw;
-    border-left: 1vw solid #13c4be;
+    border-left: 10px solid #13c4be;
+    margin-top: 25px;
+    width: 450px;
+    margin-left: -40px;
+    height: 470px;
 }
+
 .about{
-    font-size: 5vw;
-    text-indent: 3vw;
-    margin-left: 5vw;
+    font-size: 55px;
+    text-align: center;
+    margin-left: 110px;
+    margin-bottom: 20px;
     color: white;
     background-color: #13c4be;
-    width: 26vw;
+    width: 260px;
 }
 
 .about_text{
-    font-size: 2.5vw;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
+    font-size: 27px;
+    margin-top: 70px;
+    margin-left: 20px;
     color: white;
 }
 
 /*Page 3*/
 .page3{
+    margin-top: 10px;
     background-color: #2A3D48;
-    
+    height: 100%;
+    padding-bottom: 50px;
 }
 
 .product_container{
-    position: absolute;
     display: flex;
     flex-direction: row;
-    margin-right: 3vw;
+    flex-wrap: wrap;
+    margin-left: 120px;
 }
 
 .product{
-    height: 47vh;
-    max-width: 25vw;
-}
-
-@keyframes wipe-enter {
-	0% {
-		transform: scale(0, .025);
-	}
-	50% {
-		transform: scale(1, .025);
-	}
+    height: 250px;
+    width: 250px;
 }
 
 .card{
-    margin-top: 2%;
-    margin-right: 5vw;
+    margin-right: 20px;
     background-color: rgb(255, 255, 255);
-    height: 47vh;
-    max-width: 25vw;
-    box-shadow: 5px 5px 20px black; 
+    height: 250px;
+    width: 250px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0); 
     overflow: hidden;
     transition: 800ms ease;
 }
@@ -247,8 +258,8 @@ ul{
 .card.show{
     margin-top: 2.5%;
     margin-right: 5vw;
-    height: 90vh;
-    width: 25vw;
+    height: 485px;
+    width: 250px;
     transform: scale(1.03);
     transition: 800ms ease;
 }
@@ -287,15 +298,17 @@ ul{
 .page4{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #2A3D48;
     color: #ef9e1d;
 }
 
 .promotion_container{
     background-color: #ffffff;
-    height: 90vh;
-    width: 30vw;
+    height: 480px;
+    width: 350px;
+    margin-left: 70px;
+    margin-top: 75px;
     box-shadow: 0px 0px 20px #13c4be; 
 }
 
@@ -331,9 +344,49 @@ ul{
 
 
 .promotion_image{
-    margin-right: 7vw;
+    width: 40%;
+    margin-top: 80px;
+    margin-left: 100px;
 }
 
+
+/*page5*/
+.page5{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_header{
+    font-size: 60px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    color: white;
+}
+
+#enter_name{
+    width: 300px;
+}
+
+#email{
+    width: 300px;
+}
+
+#message{
+    width: 400px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
 
 
 /*
