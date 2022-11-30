@@ -1,9 +1,45 @@
 function nav_button() {
   document.getElementById('navigation').classList.toggle('active');
-  document.getElementById('fade').classList.toggle('fade');
 }
 
-const cards = document.querySelectorAll('.card');
+
+const next = document.querySelector('.next')
+
+
+next.addEventListener('click', function(){
+  next.classList.add('next_anim')
+  while (true)
+  {
+    if(document.querySelector('.contact_input') == null)
+    {
+      break
+    }
+    else
+    {
+      document.querySelector('.contact_input').setAttribute('class','next_anim')
+    }
+  }
+  document.querySelector('.drop').setAttribute('class', 'next_anim')
+})
+
+next.addEventListener('click', function(){
+  next.classList.add('next_anim')
+  while (true)
+  {
+    if(document.querySelector('.label') == null)
+    {
+      break
+    }
+    else
+    {
+      document.querySelector('.label').setAttribute('class', 'next_anim')
+    }
+  }
+})
+
+
+
+const cards = document.querySelectorAll('.card')
 
 const observer1 = new IntersectionObserver(entries => {
   entries.forEach(entry =>{

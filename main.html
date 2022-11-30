@@ -12,7 +12,6 @@
     
 </head>
 
-
 <body>
     <nav class = "navigation" id = "navigation">
         <div class = "nav_button" onclick = "nav_button()">
@@ -216,27 +215,38 @@
                 </ul>
             </div>
             
-            <div class = "right-content promotion_image">
-                <img src = "https://cdn-fbocb.nitrocdn.com/aDaPWqBIJzsHPFdXTzYUJFRDQzwYJuQC/assets/static/optimized/rev-c490661/wp-content/uploads/2022/08/audio-transcription.svg" width = "500vw" height = "500vh" alt = "Promotion Picture">
+            
+            <div class = "right-content p_image_container">
+                <img class = "promotion_image" src = "https://cdn-fbocb.nitrocdn.com/aDaPWqBIJzsHPFdXTzYUJFRDQzwYJuQC/assets/static/optimized/rev-c490661/wp-content/uploads/2022/08/audio-transcription.svg" width = "500vw" height = "500vh" alt = "Promotion Picture">
             </div>
         </div>
+            <div class = "page page5" id = "page5">
+                <div class = "form_container">
+                    <h1 class = "contact_header">Contact Us</h1>
+                    <form class = "contact" action = "#page5">
 
-        <div class = "page page5" id = "page5">
-            <h1 class = "contact_header">Contact Us</h1>
-            <form class = "contact" action = "form.php" method = "GET">
+                        <label class = "label" for = "enter_name">Name</label>
+                        <input class = "contact_input" type = "text" id = "enter_name" name = "name" placeholder = "Enter Name">
 
-                <label class = "label name_label" for = "enter_name">Name</label>
-                <input type = "text" id = "enter_name" name = "name" placeholder = "Enter Name">
+                        <label class = "label" for = "email">Email</label>
+                        <input class = "contact_input" type = "email" id = "email" name = "email" placeholder = "Enter Email">
 
-                <label class = "label email_label" for = "email">Email</label>
-                <input type = "email" id = "email" name = "email" placeholder = "Enter Email">
-                
-                <label class = "label message_label" for = "message">Contact Us</label>
-                <textarea class = "message" id = "message" name="message" placeholder="Tell us about your experience"></textarea>
+                        <label class = "label" for = "region">Region</label> 
+                        <select class = "drop" type = "region" id = "region" name = "region" placeholder="Select a Region">
+                            <option class = "region_text">Select a Region</option>
+                            <option class = "region_text" value  = "North America">North America</option>
+                            <option class = "region_text" value  = "South America">South America</option>
+                            <option class = "region_text" value  = "Asia Pacific">Asia Pacific</option>
+                            <option class = "region_text" value  = "Europe">Europe</option>
+                            <option class = "region_text" value  = "Middle East">Middle East</option>
+                        </select>
+                        
+                        <!-- <label class = "label message_label" for = "message">Contact Us</label>
+                        <textarea class = "message" id = "message" name="message" placeholder="Tell us about your experience"></textarea> -->
  
-                <input class = "submit button" type = "submit" value = "Submit">
-
-            </form>
+                        <input class = "next" type = "submit" value = "Next">
+                    </form>
+            </div>
         </div>
 </body>
 

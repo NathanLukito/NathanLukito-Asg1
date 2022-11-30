@@ -1,9 +1,25 @@
+@media only screen and (max-width: 1080px){
+    .navigation{
+        transform: translateX(-80px);
+    }
+    .nav_btn_icon{
+        margin-left: 40px;
+    }
+    .navigation.active{
+        margin-left: 80px;
+    }
+    .navigation.active .nav_btn_icon{
+        margin-left: 0px;
+    }
+
+}
+
 .navigation{
     width: 80px;
     height: 100%;
     position: fixed;
     background: #3e3e3e;
-    transition: width 200ms ease;
+    transition: 200ms ease;
     font-size: 0%;
     z-index: 3;
 }
@@ -14,6 +30,7 @@
     height: 100%;
     font-size:x-large;
     color: black;
+    transition: 200ms ease;
     box-shadow: 1px 1px 10px black;
 }
 
@@ -22,12 +39,6 @@
     fill: #13c4be;
     transition: 200ms ease;
 }
-
-
-.navigation.active .icon:hover{
-    fill: rgb(39, 39, 39);
-} 
-
 
 .navigation.active .nav_link{
     animation: fadeIn 0.5s;
@@ -46,7 +57,6 @@
     transform: rotateZ(180deg);
     margin-top: -50px;
     padding-right: 170px;
-    
     transition: 200ms ease;
 }
 
@@ -89,5 +99,6 @@
 .icon:hover{
     fill: #13c4be;
     transform: scale(1.03);
+    border-right: 4px solid #13c4be;
     transition: 200ms ease;
 }
