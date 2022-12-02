@@ -88,8 +88,6 @@
                             18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path> 
                             <span> Contact Us </span>
                         </svg>
-
-                        
                     </a>
                 </li>
             </ul>
@@ -101,6 +99,29 @@
         
 
         <section class = "page1" id = "page1">
+            <div class = "acc_container">
+                <img class = "back" src = "cross.svg">
+                <form class = "acc">
+                    <label class = "acc_label" for = "enter_username">Username</label>
+                    <input class = "acc_input" type = "text" id = "enter_username" name = "username" placeholder = "Enter Username" required>
+
+                    <label class = "acc_label" for = "email">Email</label>
+                    <input class = "acc_input" type = "email" id = "email" name = "email" placeholder = "Enter Email" required>
+
+                    <label class = "acc_label" for  = "password">Password</label>
+                    <input class = "acc_input" type = "text" id = "password" name = "password" placeholder = "Enter Password" required>
+
+                    <input class = "acc_submit" type = "submit" value = "Sign In">
+                </form>
+                <div class = "acc_desc_container">
+                    <h1 class = "acc_desc_name">Sign Up Now <br></h1>
+                    <ul class = "acc_desc">
+                        <li class = "acc_details">Enter any name as a username</li>
+                        <li class = "acc_details">Enter a email address that you frequently use</li>
+                        <li class = "acc_details">Enter a password that is strong</li>
+                    </ul>
+                </div>
+            </div>
             <div class = "left-content">
                 <div class = "name_container">
                     <h1 class = "name">
@@ -112,8 +133,8 @@
                         The World's Best
                     </p>
                     <div class = "button_container">
-                        <a href = "#" class = "btn acc_button"> Get Started </a>
-                        <a href = "http://127.0.0.1:5500/NathanLukito-Asg1/products.html" class = "btn products_button"> Our Products </a>
+                        <a class = "btn acc_button"> Sign In </a>
+                        <a href = "#page3" class = "btn products_button"> Our Products </a>
                     </div>
                 </div>
             </div>
@@ -226,14 +247,14 @@
                     <form class = "contact" action = "#page5">
 
                         <label class = "label" for = "enter_name">Name</label>
-                        <input class = "contact_input" type = "text" id = "enter_name" name = "name" placeholder = "Enter Name">
+                        <input class = "contact_input" type = "text" id = "enter_name" name = "name" placeholder = "Enter Name" required>
 
                         <label class = "label" for = "email">Email</label>
-                        <input class = "contact_input" type = "email" id = "email" name = "email" placeholder = "Enter Email">
+                        <input class = "contact_input" type = "email" id = "email" name = "email" placeholder = "Enter Email" required>
 
                         <label class = "label" for = "region">Region</label> 
-                        <select class = "drop" type = "region" id = "region" name = "region" placeholder="Select a Region">
-                            <option class = "region_text">Select a Region</option>
+                        <select class = "drop" type = "region" id = "region" name = "region" placeholder="Select a Region" required>
+                            <option class = "region_text">Choose a Region</option>
                             <option class = "region_text" value  = "North America">North America</option>
                             <option class = "region_text" value  = "South America">South America</option>
                             <option class = "region_text" value  = "Asia Pacific">Asia Pacific</option>
@@ -241,10 +262,13 @@
                             <option class = "region_text" value  = "Middle East">Middle East</option>
                         </select>
                         
-                        <!-- <label class = "label message_label" for = "message">Contact Us</label>
-                        <textarea class = "message" id = "message" name="message" placeholder="Tell us about your experience"></textarea> -->
+                        
  
                         <input class = "next" type = "submit" value = "Next">
+                    </form>
+                    <form class = "text_message" acton = "#page5">
+                        <textarea class = "message" id = "message" name="message" placeholder="Tell us about your experience" required></textarea>
+                        <input class = "submit" type = "submit" value = "Submit">
                     </form>
             </div>
         </div>

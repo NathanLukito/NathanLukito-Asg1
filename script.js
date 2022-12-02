@@ -2,9 +2,33 @@ function nav_button() {
   document.getElementById('navigation').classList.toggle('active');
 }
 
+const acc_button = document.querySelector('.acc_button')
+
+
+acc_button.addEventListener('click', function(){
+  document.querySelector('.acc_container').classList.add('appear')
+  setTimeout(function(){
+    document.querySelector('.acc_container').classList.add('extra')
+  }, 200)
+  setTimeout(function(){
+    document.querySelector('.acc_desc').classList.add('down')
+  }, 400)
+})
+
+const back = document.querySelector('.back')
+
+back.addEventListener('click', function(){
+  document.querySelector('.acc_desc').classList.remove('down')
+  setTimeout(function(){
+    document.querySelector('.acc_container').classList.remove('extra')
+  }, 200)
+  setTimeout(function(){
+    document.querySelector('.acc_container').classList.remove('appear')
+  }, 400)
+})
+
 
 const next = document.querySelector('.next')
-
 
 next.addEventListener('click', function(){
   next.classList.add('next_anim')
@@ -20,6 +44,8 @@ next.addEventListener('click', function(){
     }
   }
   document.querySelector('.drop').setAttribute('class', 'next_anim')
+  document.querySelector('.text_message').classList.add("next_anim")
+  document.querySelector('.message_label').classList.add("next_anim")
 })
 
 next.addEventListener('click', function(){
