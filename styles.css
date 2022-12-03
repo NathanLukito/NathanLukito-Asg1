@@ -1,23 +1,4 @@
-@media only screen and (max-width:820px){ 
-    .right-content, .left-content{
-        width: 100%;
-        padding-left: 9%;
-        justify-self: center;   
-    }
-    .team_image_container{
-        transform: translateX(-45px);
-    }
-    .team_image{
-        width: 90vw;
-        height: auto;
-    }
-    .about_container{
-   
-    }
-    .about_text{
-        text-align: center;
-    }
-}
+
 
 html{
     scroll-behavior: smooth;
@@ -108,8 +89,6 @@ ul{
     transition: all 300ms;
 }
 
-
-
 .acc_label{
     margin-top: 4vh;
     font-size: 1.7vw;
@@ -165,7 +144,7 @@ ul{
     margin-left: 11vw;
     margin-bottom: 3px;
     align-items: center;
-    min-width: 25.3vw;
+    width: 25.3vw;
     height: 89vh;
 }
 
@@ -214,9 +193,9 @@ ul{
 }
 .name_container{
     background-color: #13c4be;
-    height: 100px;
+    height: auto;
     width: 430px;
-    margin-left: 20%;
+    margin-left: 9vw;
     margin-top: -42px;
 }
 
@@ -228,7 +207,7 @@ ul{
 }
 
 .page1_desc{
-    margin-left: 25%;
+    margin-left: 10vw;
     width: 500px;
 }
 
@@ -236,13 +215,17 @@ ul{
     font-size: 40px;
     color: rgb(255, 255, 255);
     border-left: 4px solid #13c4be;
+    padding-left: 15px;
     height: auto;
 }
 
-.desc::after{
+.desc_line{
     content: "\a Transcription A.I.";
-    white-space: pre;
     color: rgb(141, 255, 177)
+}
+
+.desc_line.desc_change{
+    width: 0px;
 }
 
 .right-content{
@@ -355,7 +338,6 @@ ul{
 .team_image{
     max-height: 360px;
     max-width: 500px;
-    margin-top: 15px;
 }
 
 .about_container{
@@ -427,7 +409,7 @@ ul{
 
  .product_name{
     font-family: sans-serif;
-    font-size: 2vw;
+    font-size: 23px;
     color: #13c4be;
     text-align: center;
     
@@ -499,7 +481,7 @@ ul{
     padding-bottom: 1vh;
     padding-left: 2vw;
     padding-right: 2vw;
-    margin-left: -1.3vw;
+    margin-left: -2vw;
 }
 
 .promotion_text{
@@ -509,7 +491,7 @@ ul{
 
 
 .p_image_container{
-    width: 40%;
+    width: 40vw;
     background-color: #ef9e1d;
     height: 480px;
     padding-left: 100px;
@@ -527,6 +509,7 @@ ul{
     flex-direction: column;
     align-items: center;
     width: 200vw;
+    height: 100vh;
     margin-top: 20px;
 }
 
@@ -576,7 +559,7 @@ ul{
     position: relative;
     outline: 0;
     border: 2px solid white;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: transparent;
     width: 300px;
     height: 40px;
@@ -617,7 +600,7 @@ ul{
     margin-top: 40px;
     transition: all 300ms;
     background-image: url(next.svg);
-    background-size: 23vw 4vw;
+    background-size: 22vw 4vw;
     background-repeat: no-repeat;
     
 }
@@ -627,18 +610,18 @@ ul{
     border: 2px solid white;
     background-color: #13c4be;
     background-image: url(next.svg);
-    background-size: 50vw 4vw;
+    background-size: 45vw 4vw;
     background-repeat: no-repeat;
 }
 
 .next.next_anim{
     transform: translateX(50vw);
     opacity: 0;
-    transition: all 300ms;
+    transition: all 500ms;
 }
 .next_anim{
     transform: translateX(80vw);
-    transition: all 300ms;
+    transition: all 500ms;
 }
 
 .message_label{
@@ -693,6 +676,263 @@ ul{
     background-color: #13c4be;
 }
 
+ 
+
+@media only screen and (max-width:650px){ 
+
+    .right-content, .left-content{
+        width: 100%;
+        padding-left: 9%;
+        justify-self: center;   
+    }
+/* page1 */
+    
+    .acc_container{
+        flex-direction: column;
+        width: 5vw;
+    }
+
+    .acc_container.appear.extra{
+        height: 165vw;
+        transform: translateX(-20vw);
+    }
+
+    .acc{
+        margin-top: 0vh;
+        margin-left: 2vw;
+    }
+
+    .acc_label{
+        font-size: 4vw;
+        margin-top: 2vw;
+    }
+
+    .acc_input{
+        width: 40vw;
+        height: 10vw;
+    }
+
+    .acc_submit{
+        width: 30vw;
+        font-size: 5vw;
+        padding: 2vw 2vw;
+        margin-top: 6vw;
+    }
+
+    .acc_desc_container{
+        width: 60vw;
+        height: 92vw;
+        margin-left: 1vw;
+        margin-top: 6vw;
+    }
+
+    .acc_desc_name{
+        font-size: 6vw;
+        padding-left: 5vw;
+        width: 40vw;
+    }
+
+    .acc_desc_name::after{
+        font-size: 5vw;
+    }
+
+    .acc_desc{
+        width: 28vw;
+        height: 0vw;
+    }
+
+    .acc_desc.down{
+        height: 45vw;
+    }
+
+    .acc_details{
+        font-size: 4vw;
+        width: 30vw;
+        transform: translateX(-7vw);
+    }
+
+    .name_container{
+        width: 80vw;
+        height: 20vw;
+        margin-left: 0vw;
+    }
+
+    .name{
+        font-size:10vw;
+    }
+
+    .page1_desc{
+        margin-left: 0vw;
+        width: 80vw;
+    }
+
+    .desc{
+        font-size: 10vw;
+    }
+
+    .robot_image{
+        margin-left: 0vw;
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .btn{
+        font-size: 5vw;
+    }
+
+    .acc_button{
+        width: 50vw;
+        height: 10vw;
+        text-indent: 1vw;
+        padding-top: 2vw;
+
+    }
+
+    .products_button{
+        width: 50vw;
+        height: 9vw;
+        font-size: 4vw;
+        text-indent: 2vw;
+        padding-top: 3vw;
+    }
+    
+/* page2 */
+    .team_image_container{
+        margin-left: 0vw;
+        transform: translateX(-12.5vw);
+    }
+
+    .team_image{
+        width: 90vw;
+        height: auto;
+    }
+    .about_container{
+        border-left: 0px solid black;
+        width: 90vw;
+        height: 150vw;
+    }
+
+    .about{
+        font-size: 12vw;
+        width: 80vw;
+        margin-left: 4.5vw;
+    }
+    .about_text{
+        text-align: center;
+        font-size: 7vw;
+        margin-right: 5vw;
+    }
+
+    /*Page 3*/
+
+    .product_container{
+        margin-left: 0vw;
+    }
+
+    .card.show{
+        margin-bottom: 20px;
+    }
+
+    .product_desc li{
+        background-size: 0vw 0vw;
+    }
+
+    /*Page 4*/
+    .promotion_container{
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        height: 40vw;
+        margin-right: 24vw;
+        box-shadow: 0px 0px 0px #010101; 
+    }
+
+    .promotion_header{
+        transform: translateY(-5vh);
+        margin-top: 8vw;
+        margin-right: 3vw;
+        font-size: 8vw; 
+    }
+    .promotion_desc{
+        transform: translateY(0vh);
+        margin-top: 8vw;
+        margin-right: 3vw;
+        font-size: 4vw;
+        padding-left: 0vh;
+    }
+
+    .p_image_container{
+        width: 80vw;
+        height: 60vw;
+        transform: translateY(-15vh)
+
+    }
+
+    .promotion_image{
+        height: auto;
+        width: 60vw;
+        margin-top: 23vw;
+        margin-left: 7vw;
+    }
+
+    /*page 5*/
+    .form_container{
+        width: 80vw;
+        height: 100vw;
+        transform: translateX(-57.5vw);
+    }
+
+    .text_message{
+        transform: translateX(-150vw);
+    }
+
+    .contact_header{
+        font-size: 10vw;
+        transform: translateY(-7vw);
+        padding-bottom: 5vw;
+    }
+
+    .contact_input{
+        width: 50vw;
+        line-height: 8vw;
+    }
+
+    .drop{
+        width: 50vw;
+        height: 10vw;
+    }
+
+    .next{
+        font-size: 5vw;
+        width: 25vw;
+        padding: 2vw 2vw;
+        background-size: 45vw 9vw;
+    }
+
+    .next:hover{
+        width: 50vw;
+        background-size: 90vw 9vw;
+    }
+
+    .message{
+        width: 60vw;
+        height: 50vw;
+        min-width: 40vw;
+        max-width: 80vw;
+        transform: translateY(-50px);
+    }
+
+    .submit{
+        transform: translateY(-15vw);
+        width: 30vw;
+        font-size: 7vw;
+        padding: 2vw 2vw;
+    }
+
+    .submit:hover{
+        width: 60vw;
+    }
+}
 
 
 /*

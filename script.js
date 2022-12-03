@@ -17,7 +17,7 @@ acc_button.addEventListener('click', function(){
 
 const back = document.querySelector('.back')
 
-back.addEventListener('click', function(){
+back.addEventListener('click', function acc_back(){
   document.querySelector('.acc_desc').classList.remove('down')
   setTimeout(function(){
     document.querySelector('.acc_container').classList.remove('extra')
@@ -26,7 +26,6 @@ back.addEventListener('click', function(){
     document.querySelector('.acc_container').classList.remove('appear')
   }, 400)
 })
-
 
 const next = document.querySelector('.next')
 
@@ -45,7 +44,6 @@ next.addEventListener('click', function(){
   }
   document.querySelector('.drop').setAttribute('class', 'next_anim')
   document.querySelector('.text_message').classList.add("next_anim")
-  document.querySelector('.message_label').classList.add("next_anim")
 })
 
 next.addEventListener('click', function(){
@@ -97,5 +95,49 @@ observer2.observe(cards[2])
 
 
 
+
+document.querySelector('.acc_submit').addEventListener('click', function() {
+  event.preventDefault()
+  let username = document.querySelector('#username').value
+  let email = document.querySelector('#email').value
+  let password = document.querySelector('#password').value
+
+  if ((username != null && email != null && password != null) == true)
+  {
+    document.querySelector('.name').innerHTML = "Welcome, " + username
+    document.querySelector('.desc').innerHTML = "We are pleased <br> To have you"
+    
+
+    document.querySelector('.acc_desc').classList.remove('down')
+    setTimeout(function(){
+      document.querySelector('.acc_container').classList.remove('extra')
+    }, 200)
+    setTimeout(function(){
+      document.querySelector('.acc_container').classList.remove('appear')
+    }, 400)
+  }
+
+  else
+  {
+    alert("Please enter in the required fields")
+  }
+  
+})
+
+
+
+document.querySelector('.submit').addEventListener('click', function(){
+  event.preventDefault()
+  let message = document.querySelector('#message').value
+  console.log(message)
+  if (message == 0)
+  {
+    alert("Please enter your message in the box")
+  }
+  else
+  {
+    document.querySelector('.contact_header').innerHTML = "Thank you"
+  }
+})
 
 
