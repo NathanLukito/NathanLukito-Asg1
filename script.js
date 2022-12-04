@@ -1,10 +1,12 @@
+/*navigation button*/
+
 function nav_button() {
   document.getElementById('navigation').classList.toggle('active');
 }
 
 const acc_button = document.querySelector('.acc_button')
 
-
+/*Sign up Form*/
 acc_button.addEventListener('click', function(){
   document.querySelector('.acc_container').classList.add('appear')
   setTimeout(function(){
@@ -27,6 +29,7 @@ back.addEventListener('click', function acc_back(){
   }, 400)
 })
 
+/*Review Form*/
 const next = document.querySelector('.next')
 
 next.addEventListener('click', function(){
@@ -63,7 +66,21 @@ next.addEventListener('click', function(){
   }
 })
 
+document.querySelector('.submit').addEventListener('click', function(){
+  event.preventDefault()
+  let message = document.querySelector('#message').value
+  console.log(message)
+  if (message == 0)
+  {
+    alert("Please enter your message in the box")
+  }
+  else
+  {
+    document.querySelector('.contact_header').innerHTML = "Thank you"
+  }
+})
 
+/*Page 3 Cards*/
 
 const cards = document.querySelectorAll('.card')
 
@@ -118,6 +135,8 @@ const observer3 = new IntersectionObserver(entries => {
   })
 })
 
+/*Footer*/
+
 observer3.observe(footer[0])
 
 document.querySelector('.acc_submit').addEventListener('click', function() {
@@ -149,19 +168,5 @@ document.querySelector('.acc_submit').addEventListener('click', function() {
 })
 
 
-
-document.querySelector('.submit').addEventListener('click', function(){
-  event.preventDefault()
-  let message = document.querySelector('#message').value
-  console.log(message)
-  if (message == 0)
-  {
-    alert("Please enter your message in the box")
-  }
-  else
-  {
-    document.querySelector('.contact_header').innerHTML = "Thank you"
-  }
-})
 
 
