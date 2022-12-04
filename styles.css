@@ -8,12 +8,9 @@ body{
     margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(0, 0, 0);
-    background-color: #ffffff;
-    overflow-x: hidden;
-    z-index: 3;
     background-color: #2A3D48;
+    overflow-x: hidden;
 }
-
 
 .page{
     display: flex;
@@ -326,30 +323,31 @@ ul{
 .page2{
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     height: 100%;
 }
 
 .team_image_container{
-    margin-top: 78px;
+    margin-top: 118px;
     margin-left: 30px;
 }
 
 .team_image{
-    max-height: 360px;
-    max-width: 500px;
+    height: 50vh;
+    width: 40vw;
 }
 
 .about_container{
     border-left: 10px solid #13c4be;
-    margin-top: 25px;
+    transform: translateY(-50px);
     width: 450px;
+    margin-top: 120px;
     margin-left: -40px;
     height: 470px;
 }
 
 .about{
-    font-size: 55px;
+    font-size: 4vw;
     text-align: center;
     margin-left: 110px;
     margin-bottom: 20px;
@@ -359,7 +357,7 @@ ul{
 }
 
 .about_text{
-    font-size: 27px;
+    font-size: 2.2vw;
     margin-top: 70px;
     margin-left: 20px;
     color: white;
@@ -377,39 +375,40 @@ ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 120px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
 }
 
 .product{
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
 }
 
 .card{
+    margin-left: 6vw;
     margin-top: 2.5%;
-    margin-right: 20px;
     background-color: rgb(255, 255, 255);
     height: 250px;
-    width: 250px;
+    width: 280px;
+    padding-right: 10px;
     margin-bottom: 235px;
     box-shadow: 5px 5px 20px rgb(0, 0, 0); 
+    margin-bottom: 19.6vw;
     overflow: hidden;
     transition: 800ms ease;
 }
 
 .card.show{
     margin-top: 2.5%;
-    margin-bottom: 0px;
-    margin-right: 5vw;
-    height: 485px;
-    width: 250px;
-    transform: scale(1.03);
-    transition: 800ms ease;
+    margin-bottom: 0vw;
+    height: 510px;
+    transition: 500ms ease;
 }
 
  .product_name{
     font-family: sans-serif;
-    font-size: 23px;
+    font-size: 25px;
     color: #13c4be;
     text-align: center;
     
@@ -417,7 +416,7 @@ ul{
 
 .product_desc{
     font-family: sans-serif;
-    font-size: 110.5%; 
+    font-size: 17px; 
     padding-left: 0vw;
 }
 
@@ -449,15 +448,13 @@ ul{
 
 .promotion_container{
     background-color: #ffffff;
-    height: 480px;
-    width: 350px;
+    margin-top: 50px;
+    height: 38.6vw;
+    width: 28vw;
     margin-left: 70px;
-    margin-top: 30px;
     box-shadow: 10px 0px 20px #010101; 
     z-index: 1;
 }
-
-
 
 .promotion_header{
     font-size: 6vw;
@@ -488,20 +485,36 @@ ul{
     padding-bottom: 5vh;
 }
 
-
-
 .p_image_container{
     width: 40vw;
     background-color: #ef9e1d;
-    height: 480px;
+    height: 38.6vw;
     padding-left: 100px;
     z-index: 0;
 }
 
 .promotion_image{
+    margin-left: 50px;
     filter: drop-shadow(20px 0px 4px #000000);
 }
 
+.promotions_button{
+    position: absolute;
+    transform: translateX(-100px);
+    font-size: 30px;
+    color: white;
+    padding: 20px 90px;
+    background-color: #13c4be;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 300ms;
+}
+
+.promotions_button:hover{
+    transform: translateX(-100px) scale(1.1);
+    transition: all 300ms;
+}
 
 /*page5*/
 .page5{
@@ -600,7 +613,7 @@ ul{
     margin-top: 40px;
     transition: all 300ms;
     background-image: url(next.svg);
-    background-size: 22vw 4vw;
+    background-size: 250px 50px;
     background-repeat: no-repeat;
     
 }
@@ -610,7 +623,7 @@ ul{
     border: 2px solid white;
     background-color: #13c4be;
     background-image: url(next.svg);
-    background-size: 45vw 4vw;
+    background-size: 560px 50px;
     background-repeat: no-repeat;
 }
 
@@ -676,7 +689,49 @@ ul{
     background-color: #13c4be;
 }
 
- 
+/*footer*/
+
+.footer{
+    margin-left: 80px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10px;
+    overflow-y: hidden;
+    background-color:rgb(40, 40, 40);
+    color: white;
+    transition: height 300ms;
+}
+
+.footer.up{
+    height: auto;
+    transition: height 300ms;
+}
+
+.footer_header{
+    margin-top: 120px;
+    align-self: center;
+    transition: height 300ms;
+}
+
+.footer_header.up{
+    margin-top: 20px;
+    transition: height 300ms;
+}
+
+.footer_text{
+    align-self: center;
+}
+
+.copyright{
+    align-self: center;
+}
+
+
+
+
+
 
 @media only screen and (max-width:650px){ 
 
@@ -825,12 +880,16 @@ ul{
 
     /*Page 3*/
 
+    .page3{
+        height: 100%
+    }
     .product_container{
-        margin-left: 0vw;
+        transform: translateX(-30px);
     }
 
     .card.show{
         margin-bottom: 20px;
+        height: 90vh;
     }
 
     .product_desc li{
@@ -838,6 +897,7 @@ ul{
     }
 
     /*Page 4*/
+    
     .promotion_container{
         display: flex;
         flex-direction: row;
@@ -875,6 +935,11 @@ ul{
         margin-left: 7vw;
     }
 
+    .promotions_button{
+        margin-top: 250px;
+        margin-left: 40vw;
+        padding: 10px 50px;
+    }
     /*page 5*/
     .form_container{
         width: 80vw;
@@ -932,46 +997,8 @@ ul{
     .submit:hover{
         width: 60vw;
     }
+
+    .footer{
+        margin-left: 0
+    }
 }
-
-
-/*
-.product_name{
-    position: relative;
-    color: black;
-    border: 4px solid black;
-    height: 10vh;
-    margin-right: 30vh;
-    top: 50vh;
-    left: 28vh;
-    z-index: 3;
-} */
-
-
-
-
-
-
-/* .curvt{
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 30%;
-    height: 30%;
-    background-color: #3e3e3e;
-    transform: translate(-100%, -10%);
-    z-index: 2
-} */
-
-/* .navigation:hover{ 
-    width:30rem;
-    height: 100vh;
-    position: fixed;
-    background-color: burlywood;
-    z-index: 3;
-}   */
-
-/* .nav-item:first-child{  for home button at the bottom, not used yet
-    margin-bottom: auto;
-} */

@@ -6,12 +6,18 @@ It will provide a interface that allows the users to:
     -see offers and promotions
     -set up an account
     -contact the company
-    -look at reviews and testimonies
 
 Functions:
     -will have a navigation bar
-    -will have interactive bar
+    -will have interactice forms
     -will have 5 pages including landing page
+
+    Allow the users to:
+    -understand the services
+    -see offers and promotions
+    -set up an account
+    -contact the company
+    
 
 Company Details:
     Name: Enunciated Audio
@@ -19,6 +25,6 @@ Company Details:
     Mascot Name: Mandel
     Products: Audio Transcription, Instant Translator, Text to Speech
     Company Email: eaudio@google.com
-    Company Contact Number: 78902345
+    Company Contact Number: 78902345 (not an actual phone number)
 
 

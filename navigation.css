@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1080px){
+@media only screen and (max-width: 650px){
     .navigation{
         transform: translateX(-80px);
     }
@@ -99,6 +99,5 @@
 .icon:hover{
     fill: #13c4be;
     transform: scale(1.03);
-    border-right: 4px solid #13c4be;
     transition: 200ms ease;
 }

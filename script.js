@@ -30,6 +30,7 @@ back.addEventListener('click', function acc_back(){
 const next = document.querySelector('.next')
 
 next.addEventListener('click', function(){
+  event.preventDefault()
   next.classList.add('next_anim')
   while (true)
   {
@@ -47,6 +48,7 @@ next.addEventListener('click', function(){
 })
 
 next.addEventListener('click', function(){
+  event.preventDefault()
   next.classList.add('next_anim')
   while (true)
   {
@@ -68,7 +70,9 @@ const cards = document.querySelectorAll('.card')
 const observer1 = new IntersectionObserver(entries => {
   entries.forEach(entry =>{
     if(entry.isIntersecting){
-      entry.target.classList.add('show')
+      setTimeout(function(){
+        entry.target.classList.add('show')
+      }, 150)
     }
   })
 }, {
@@ -93,8 +97,28 @@ observer2.observe(cards[0])
 observer2.observe(cards[1])
 observer2.observe(cards[2])
 
+const footer = document.querySelectorAll('.footer')
+console.log(footer)
+const observer3 = new IntersectionObserver(entries => {
+  entries.forEach(entry =>{
+    console.log("test")
+    if(entry.isIntersecting){
+      setTimeout(function(){
+        entry.target.classList.add('up')
+        document.querySelector('.footer_header').classList.add('up')
+      }, 500)
+      setTimeout(function(){
+        window.scrollTo(0, document.body.scrollHeight)
+      }, 500)
+    }
+    else{
+      entry.target.classList.remove('up')
+      document.querySelector('.footer_header').classList.remove('up')
+    }
+  })
+})
 
-
+observer3.observe(footer[0])
 
 document.querySelector('.acc_submit').addEventListener('click', function() {
   event.preventDefault()
